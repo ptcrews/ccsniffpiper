@@ -17,7 +17,7 @@ if [ -z "$CHANNEL" ]; then
 fi
 
 # start the sniffer and fork in background
-python ccsniffpiper.py -c $CHANNEL -d &
+python2 ccsniffpiper.py -c $CHANNEL -d &
 SNIFFER_PID=$!
 
 # wait and check if it's still running (e.g. permission error)
